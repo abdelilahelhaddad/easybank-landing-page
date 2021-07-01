@@ -34,10 +34,10 @@ body {
 
 .container {
   display: flex;
-  justify-content: space-between;
-  width: 68.75rem;
-  max-width: 100%;
+  max-width: 1440px;
   margin: 0 auto;
+  padding: 0 7rem;
+  overflow: hidden;
 }
 
 li {
@@ -48,7 +48,12 @@ a {
   text-decoration: none;
 }
 
+.my-2 {
+  margin: 1.5rem 0;
+}
+
 .requestInviteButton {
+  display: inline-block;
   background: linear-gradient(90deg, $Lime-Green, $Bright-Cyan);
   color: $White;
   padding: 0.8rem 2.5rem;
@@ -56,19 +61,69 @@ a {
 }
 
 //?Navbar Section
+nav {
+  .container {
+    background-color: $White;
+    position: relative;
+    z-index: 99;
+    justify-content: space-between;
+  }
 
-nav.container {
-  margin: 1.5rem auto;
-}
+  .logo,
+  .navbar {
+    display: flex;
+    align-items: center;
+  }
 
-.navbarList {
-  display: flex;
+  .navbar {
+    .navbarList {
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
-  li {
-    padding: 0 1rem;
+      li {
+        padding: 0 1rem;
 
-    a {
-      color: $Grayish-Blue;
+        a {
+          color: $Grayish-Blue;
+        }
+      }
     }
   }
+}
+
+.easybankHero {
+  background-color: $Very-Light-Gray;
+
+  .container {
+    height: 80vh;
+
+    .heroContent {
+      width: 40%;
+    }
+
+    .heroMockups {
+      width: 60%;
+
+      .bgIntro {
+        width: 1271px;
+        height: 1034px;
+        transform: translate(3%, -25%);
+      }
+
+      .mockups {
+        width: 1271px;
+        height: 1034px;
+        transform: translate(16%, -112%);
+      }
+    }
+
+  }
+}
+
+.whyEasyBank {
+  background-color: $Light-Grayish-Blue;
+  height: 100vh;
+  position: relative;
+  z-index: -70;
 }

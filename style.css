@@ -17,12 +17,10 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 68.75rem;
-  max-width: 100%;
+  max-width: 1440px;
   margin: 0 auto;
+  padding: 0 7rem;
+  overflow: hidden;
 }
 
 li {
@@ -33,7 +31,12 @@ a {
   text-decoration: none;
 }
 
+.my-2 {
+  margin: 1.5rem 0;
+}
+
 .requestInviteButton {
+  display: inline-block;
   background: -webkit-gradient(linear, left top, right top, from(#31d35c), to(#2bb7da));
   background: linear-gradient(90deg, #31d35c, #2bb7da);
   color: white;
@@ -41,21 +44,79 @@ a {
   border-radius: 100vw;
 }
 
-nav.container {
-  margin: 1.5rem auto;
+nav .container {
+  background-color: white;
+  position: relative;
+  z-index: 99;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.navbarList {
+nav .logo,
+nav .navbar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.navbarList li {
+nav .navbar .navbarList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .navbar .navbarList li {
   padding: 0 1rem;
 }
 
-.navbarList li a {
+nav .navbar .navbarList li a {
   color: #9698a6;
+}
+
+.easybankHero {
+  background-color: #fafafa;
+}
+
+.easybankHero .container {
+  height: 80vh;
+}
+
+.easybankHero .container .heroContent {
+  width: 40%;
+}
+
+.easybankHero .container .heroMockups {
+  width: 60%;
+}
+
+.easybankHero .container .heroMockups .bgIntro {
+  width: 1271px;
+  height: 1034px;
+  -webkit-transform: translate(3%, -25%);
+          transform: translate(3%, -25%);
+}
+
+.easybankHero .container .heroMockups .mockups {
+  width: 1271px;
+  height: 1034px;
+  -webkit-transform: translate(16%, -112%);
+          transform: translate(16%, -112%);
+}
+
+.whyEasyBank {
+  background-color: #f3f4f6;
+  height: 100vh;
+  position: relative;
+  z-index: -70;
 }
 /*# sourceMappingURL=style.css.map */
