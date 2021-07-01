@@ -93,6 +93,21 @@ nav .navbar .navbarList li a {
 
 .easybankHero .container .heroContent {
   width: 40%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.easybankHero .container .heroContent h1 {
+  font-size: 50px;
+  font-family: 'Public Sans', sans-serif;
+  font-weight: 300;
+  color: #2d314d;
+}
+
+.easybankHero .container .heroContent p {
+  margin: 2rem 0;
+  color: #9698a6;
 }
 
 .easybankHero .container .heroMockups {

@@ -100,6 +100,19 @@ nav {
 
     .heroContent {
       width: 40%;
+      align-self: center;
+
+      h1 {
+        font-size: 50px;
+        font-family: 'Public Sans', sans-serif;
+        font-weight: $font-weight-300;
+        color: $Dark-Blue;
+      }
+
+      p {
+        margin: 2rem 0;
+        color: $Grayish-Blue;
+      }
     }
 
     .heroMockups {
