@@ -130,8 +130,51 @@ nav .navbar .navbarList li a {
 
 .whyEasyBank {
   background-color: #f3f4f6;
-  height: 100vh;
   position: relative;
   z-index: -70;
+  padding: 7rem 0;
+}
+
+.whyEasyBank .container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.whyEasyBank .container h2 {
+  font-size: 40px;
+  font-family: 'Public Sans', sans-serif;
+  font-weight: 300;
+  color: #2d314d;
+}
+
+.whyEasyBank .container > p {
+  margin: 2rem 0;
+  color: #9698a6;
+  width: 55%;
+}
+
+.whyEasyBank .container .features {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.whyEasyBank .container .features .feature img {
+  margin-top: 2rem;
+}
+
+.whyEasyBank .container .features .feature h4 {
+  font-size: 20px;
+  font-family: 'Public Sans', sans-serif;
+  font-weight: 300;
+  color: #2d314d;
+  margin: 2rem 0;
+}
+
+.whyEasyBank .container .features .feature p {
+  color: #9698a6;
+  width: 90%;
 }
 /*# sourceMappingURL=style.css.map */
