@@ -177,4 +177,76 @@ nav .navbar .navbarList li a {
   color: #9698a6;
   width: 90%;
 }
+
+.latestArticles {
+  background-color: #fafafa;
+  padding: 7rem 0;
+}
+
+.latestArticles .container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.latestArticles .container h2 {
+  font-size: 40px;
+  font-family: 'Public Sans', sans-serif;
+  font-weight: 300;
+  color: #2d314d;
+}
+
+.latestArticles .container .articles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 3rem;
+}
+
+.latestArticles .container .articles .article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: white;
+  border-radius: 7px;
+  width: 23%;
+}
+
+.latestArticles .container .articles .article img {
+  width: 100%;
+  border-radius: 7px 7px 0 0;
+  height: 50%;
+}
+
+.latestArticles .container .articles .article .articleContent {
+  padding: 1.7rem;
+}
+
+.latestArticles .container .articles .article .articleContent h6,
+.latestArticles .container .articles .article .articleContent p {
+  color: #9698a6;
+}
+
+.latestArticles .container .articles .article .articleContent h6 {
+  margin-bottom: 0.5rem;
+}
+
+.latestArticles .container .articles .article .articleContent h4 {
+  color: #2d314d;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+  font-size: 20px;
+}
+
+.latestArticles .container .articles .article .articleContent p {
+  font-size: 16px;
+}
 /*# sourceMappingURL=style.css.map */
