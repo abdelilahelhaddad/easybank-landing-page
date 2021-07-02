@@ -30,6 +30,7 @@ $White: hsl(0, 0%, 100%);
 body {
   font-family: 'Public Sans', sans-serif;
   font-size: 18px;
+  overflow-x: hidden;
 }
 
 .container {
@@ -58,6 +59,10 @@ a {
   color: $White;
   padding: 0.8rem 2.5rem;
   border-radius: 100vw;
+
+  &:hover {
+    background: linear-gradient(90deg, rgba($Lime-Green, 0.8), rgba($Bright-Cyan, 0.8));
+  }
 }
 
 //?Navbar Section
@@ -86,6 +91,18 @@ nav {
 
         a {
           color: $Grayish-Blue;
+        }
+
+        &:hover {
+          a::after {
+            content: "";
+            display: block;
+            position: relative;
+            bottom: -35px;
+            width: 100%;
+            height: 4px;
+            background: $Lime-Green;
+          }
         }
       }
     }
@@ -125,9 +142,11 @@ nav {
       }
 
       .mockups {
-        width: 1271px;
+        position: absolute;
+        z-index: 77;
         height: 1034px;
         transform: translate(16%, -112%);
+        overflow-x: hidden;
       }
     }
   }
@@ -294,10 +313,6 @@ nav {
       .requestInviteButton {
         justify-content: center;
         margin-bottom: 2rem;
-
-        &:hover {
-          background: linear-gradient(90deg, $Lime-Green, $Bright-Cyan);
-        }
       }
 
       p {

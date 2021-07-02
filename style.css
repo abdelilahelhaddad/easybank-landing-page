@@ -11,6 +11,7 @@
 body {
   font-family: 'Public Sans', sans-serif;
   font-size: 18px;
+  overflow-x: hidden;
 }
 
 .container {
@@ -42,6 +43,11 @@ a {
   color: white;
   padding: 0.8rem 2.5rem;
   border-radius: 100vw;
+}
+
+.requestInviteButton:hover {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(49, 211, 92, 0.8)), to(rgba(43, 183, 218, 0.8)));
+  background: linear-gradient(90deg, rgba(49, 211, 92, 0.8), rgba(43, 183, 218, 0.8));
 }
 
 nav .container {
@@ -83,6 +89,16 @@ nav .navbar .navbarList li a {
   color: #9698a6;
 }
 
+nav .navbar .navbarList li:hover a::after {
+  content: "";
+  display: block;
+  position: relative;
+  bottom: -35px;
+  width: 100%;
+  height: 4px;
+  background: #31d35c;
+}
+
 .easybankHero {
   background-color: #fafafa;
 }
@@ -122,10 +138,12 @@ nav .navbar .navbarList li a {
 }
 
 .easybankHero .container .heroMockups .mockups {
-  width: 1271px;
+  position: absolute;
+  z-index: 77;
   height: 1034px;
   -webkit-transform: translate(16%, -112%);
           transform: translate(16%, -112%);
+  overflow-x: hidden;
 }
 
 .whyEasyBank {
@@ -302,11 +320,6 @@ nav .navbar .navbarList li a {
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 2rem;
-}
-
-.footer .container .ctaButton .requestInviteButton:hover {
-  background: -webkit-gradient(linear, left top, right top, from(#31d35c), to(#2bb7da));
-  background: linear-gradient(90deg, #31d35c, #2bb7da);
 }
 
 .footer .container .ctaButton p {
