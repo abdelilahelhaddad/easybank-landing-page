@@ -229,12 +229,79 @@ nav {
             font-weight: $font-weight-400;
             margin-bottom: 0.5rem;
             font-size: 20px;
+
+            &:hover {
+              cursor: pointer;
+              color: $Lime-Green;
+            }
           }
 
           p {
             font-size: 16px;
           }
         }
+      }
+    }
+  }
+}
+
+.footer {
+  background-color: $Dark-Blue;
+  padding: 4rem 0;
+
+  .container {
+    justify-content: space-between;
+
+    .logoSocials {
+      .logo {
+        margin-bottom: 4rem;
+      }
+
+      .socials {
+        svg {
+          margin-left: 0.5rem;
+
+          &:hover {
+            path {
+              fill: $Lime-Green;
+            }
+          }
+        }
+      }
+    }
+
+    .footerNavbar,
+    .privacyPolicy {
+      .list {
+
+        li {
+          padding: 0.5rem 0;
+
+          a {
+            color: $Light-Grayish-Blue;
+
+            &:hover {
+              color: $Lime-Green;
+            }
+          }
+        }
+      }
+    }
+
+    .ctaButton {
+      text-align: right;
+
+      .requestInviteButton {
+        justify-content: center;
+        margin-bottom: 2rem;
+
+        &:hover {
+          background: linear-gradient(90deg, $Lime-Green, $Bright-Cyan);
+        }
+      }
+
+      p {
+        color: $Grayish-Blue;
       }
     }
   }
