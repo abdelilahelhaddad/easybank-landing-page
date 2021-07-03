@@ -99,6 +99,10 @@ nav .navbar .navbarList li:hover a::after {
   background: #31d35c;
 }
 
+nav .hamburgerMenu {
+  display: none;
+}
+
 .easybankHero {
   background-color: #fafafa;
 }
@@ -324,5 +328,137 @@ nav .navbar .navbarList li:hover a::after {
 
 .footer .container .ctaButton p {
   color: #9698a6;
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    padding: 0 1.5rem;
+  }
+  .my-2 {
+    margin: 1rem 0;
+  }
+  nav .container {
+    background-color: white;
+    position: relative;
+    z-index: 99;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  nav .logo,
+  nav .navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  nav .navbar {
+    display: none;
+  }
+  nav .navbar .navbarList {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  nav .navbar .navbarList li {
+    padding: 0 1rem;
+  }
+  nav .navbar .navbarList li a {
+    color: #9698a6;
+  }
+  nav .navbar .navbarList li:hover a::after {
+    content: "";
+    display: block;
+    position: relative;
+    bottom: -35px;
+    width: 100%;
+    height: 4px;
+    background: #31d35c;
+  }
+  nav .hamburgerMenu {
+    display: block;
+    background: url("./images/icon-hamburger.svg") no-repeat;
+    width: 24px;
+  }
+  nav .ctaButton {
+    display: none;
+  }
+}
+
+.easybankHero {
+  background-color: #fafafa;
+}
+
+.easybankHero .container {
+  height: auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.easybankHero .container .heroContent {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  width: 100%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.easybankHero .container .heroContent h1 {
+  font-size: 40px;
+  font-family: 'Public Sans', sans-serif;
+  font-weight: 300;
+  color: #2d314d;
+}
+
+.easybankHero .container .heroContent p {
+  font-size: 15px;
+  margin: 2rem 0;
+  color: #9698a6;
+}
+
+.easybankHero .container .heroMockups {
+  width: 100%;
+}
+
+.easybankHero .container .heroMockups .bgIntro {
+  background: url("./images/bg-intro-mobile.svg") no-repeat;
+  width: 375px;
+  height: 423px;
+  -webkit-transform: none;
+          transform: none;
+  margin: 0 -1.5rem;
+}
+
+.easybankHero .container .heroMockups .bgIntro img {
+  display: none;
+}
+
+.easybankHero .container .heroMockups .mockups {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-self: center;
+  height: auto;
+  margin-top: -34.5rem;
+  -webkit-transform: none;
+          transform: none;
+}
+
+.easybankHero .container .heroMockups .mockups img {
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */
