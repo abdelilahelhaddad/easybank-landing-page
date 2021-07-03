@@ -62,62 +62,107 @@
       display: none;
     }
   }
-}
 
-.easybankHero {
-  background-color: $Very-Light-Gray;
+  .easybankHero {
+    background-color: $Very-Light-Gray;
 
-  .container {
-    height: auto;
-    flex-direction: column;
+    .container {
+      height: auto;
+      flex-direction: column;
 
-    .heroContent {
-      order: 2;
-      width: 100%;
-      align-self: center;
-      text-align: center;
-      margin-bottom: 5rem;
+      .heroContent {
+        order: 2;
+        width: 100%;
+        align-self: center;
+        text-align: center;
+        margin-bottom: 5rem;
 
-      h1 {
-        font-size: 40px;
-        font-family: 'Public Sans', sans-serif;
-        font-weight: $font-weight-300;
-        color: $Dark-Blue;
-      }
+        h1 {
+          font-size: 40px;
+          font-family: 'Public Sans', sans-serif;
+          font-weight: $font-weight-300;
+          color: $Dark-Blue;
+        }
 
-      p {
-        font-size: 15px;
-        margin: 2rem 0;
-        color: $Grayish-Blue;
-      }
-    }
-
-    .heroMockups {
-      width: 100%;
-
-      .bgIntro {
-        background: url("./images/bg-intro-mobile.svg") no-repeat;
-        width: 375px;
-        height: 423px;
-        transform: none;
-        margin: 0 -1.5rem;
-
-        img {
-          display: none;
+        p {
+          font-size: 15px;
+          margin: 2rem 0;
+          color: $Grayish-Blue;
         }
       }
 
-      .mockups {
-        display: flex;
-        justify-self: center;
-        height: auto;
-        margin-top: -34.5rem;
-        transform: none;
+      .heroMockups {
+        width: 100%;
 
-        img {
-          width: 100%;
+        .bgIntro {
+          background: url("./images/bg-intro-mobile.svg") no-repeat;
+          width: 375px;
+          height: 423px;
+          transform: none;
+          margin: 0 -1.5rem;
+
+          img {
+            display: none;
+          }
+        }
+
+        .mockups {
+          display: flex;
+          justify-self: center;
+          height: auto;
+          margin-top: -34.5rem;
+          transform: none;
+
+          img {
+            width: 100%;
+          }
         }
       }
     }
   }
+
+  .whyEasyBank {
+    padding: 4rem 0;
+
+    .container {
+      flex-direction: column;
+      text-align: center;
+
+      h2 {
+        font-size: 32px;
+      }
+
+      >p {
+        font-size: 15px;
+        width: 100%;
+        line-height: 2;
+      }
+
+      .features {
+        flex-direction: column;
+
+        .feature {
+          img {
+            margin-top: 2rem;
+          }
+
+          h4 {
+            font-size: 18px;
+            font-family: 'Public Sans', sans-serif;
+            font-weight: $font-weight-300;
+            color: $Dark-Blue;
+            margin: 1.2rem 0;
+          }
+
+          p {
+            color: $Grayish-Blue;
+            width: 100%;
+            font-size: 15px;
+            line-height: 2;
+          }
+        }
+      }
+    }
+  }
+
 }

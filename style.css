@@ -391,74 +391,104 @@ nav .hamburgerMenu {
   nav .ctaButton {
     display: none;
   }
-}
-
-.easybankHero {
-  background-color: #fafafa;
-}
-
-.easybankHero .container {
-  height: auto;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.easybankHero .container .heroContent {
-  -webkit-box-ordinal-group: 3;
-      -ms-flex-order: 2;
-          order: 2;
-  width: 100%;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  text-align: center;
-  margin-bottom: 5rem;
-}
-
-.easybankHero .container .heroContent h1 {
-  font-size: 40px;
-  font-family: 'Public Sans', sans-serif;
-  font-weight: 300;
-  color: #2d314d;
-}
-
-.easybankHero .container .heroContent p {
-  font-size: 15px;
-  margin: 2rem 0;
-  color: #9698a6;
-}
-
-.easybankHero .container .heroMockups {
-  width: 100%;
-}
-
-.easybankHero .container .heroMockups .bgIntro {
-  background: url("./images/bg-intro-mobile.svg") no-repeat;
-  width: 375px;
-  height: 423px;
-  -webkit-transform: none;
-          transform: none;
-  margin: 0 -1.5rem;
-}
-
-.easybankHero .container .heroMockups .bgIntro img {
-  display: none;
-}
-
-.easybankHero .container .heroMockups .mockups {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  justify-self: center;
-  height: auto;
-  margin-top: -34.5rem;
-  -webkit-transform: none;
-          transform: none;
-}
-
-.easybankHero .container .heroMockups .mockups img {
-  width: 100%;
+  .easybankHero {
+    background-color: #fafafa;
+  }
+  .easybankHero .container {
+    height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .easybankHero .container .heroContent {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    width: 100%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    text-align: center;
+    margin-bottom: 5rem;
+  }
+  .easybankHero .container .heroContent h1 {
+    font-size: 40px;
+    font-family: 'Public Sans', sans-serif;
+    font-weight: 300;
+    color: #2d314d;
+  }
+  .easybankHero .container .heroContent p {
+    font-size: 15px;
+    margin: 2rem 0;
+    color: #9698a6;
+  }
+  .easybankHero .container .heroMockups {
+    width: 100%;
+  }
+  .easybankHero .container .heroMockups .bgIntro {
+    background: url("./images/bg-intro-mobile.svg") no-repeat;
+    width: 375px;
+    height: 423px;
+    -webkit-transform: none;
+            transform: none;
+    margin: 0 -1.5rem;
+  }
+  .easybankHero .container .heroMockups .bgIntro img {
+    display: none;
+  }
+  .easybankHero .container .heroMockups .mockups {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-self: center;
+    height: auto;
+    margin-top: -34.5rem;
+    -webkit-transform: none;
+            transform: none;
+  }
+  .easybankHero .container .heroMockups .mockups img {
+    width: 100%;
+  }
+  .whyEasyBank {
+    padding: 4rem 0;
+  }
+  .whyEasyBank .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .whyEasyBank .container h2 {
+    font-size: 32px;
+  }
+  .whyEasyBank .container > p {
+    font-size: 15px;
+    width: 100%;
+    line-height: 2;
+  }
+  .whyEasyBank .container .features {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .whyEasyBank .container .features .feature img {
+    margin-top: 2rem;
+  }
+  .whyEasyBank .container .features .feature h4 {
+    font-size: 18px;
+    font-family: 'Public Sans', sans-serif;
+    font-weight: 300;
+    color: #2d314d;
+    margin: 1.2rem 0;
+  }
+  .whyEasyBank .container .features .feature p {
+    color: #9698a6;
+    width: 100%;
+    font-size: 15px;
+    line-height: 2;
+  }
 }
 /*# sourceMappingURL=style.css.map */
