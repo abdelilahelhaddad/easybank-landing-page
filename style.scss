@@ -149,8 +149,13 @@ nav {
         position: absolute;
         z-index: 77;
         height: 1034px;
-        transform: translate(16%, -112%);
         overflow-x: hidden;
+        top: -4%;
+        right: 0;
+
+        img {
+          margin-right: -8rem;
+        }
       }
     }
   }

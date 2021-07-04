@@ -145,9 +145,13 @@ nav .hamburgerMenu {
   position: absolute;
   z-index: 77;
   height: 1034px;
-  -webkit-transform: translate(16%, -112%);
-          transform: translate(16%, -112%);
   overflow-x: hidden;
+  top: -4%;
+  right: 0;
+}
+
+.easybankHero .container .heroMockups .mockups img {
+  margin-right: -8rem;
 }
 
 .whyEasyBank {
@@ -391,9 +395,6 @@ nav .hamburgerMenu {
   nav .ctaButton {
     display: none;
   }
-  .easybankHero {
-    background-color: #fafafa;
-  }
   .easybankHero .container {
     height: auto;
     -webkit-box-orient: vertical;
@@ -406,22 +407,14 @@ nav .hamburgerMenu {
         -ms-flex-order: 2;
             order: 2;
     width: 100%;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
     text-align: center;
     margin-bottom: 5rem;
   }
   .easybankHero .container .heroContent h1 {
     font-size: 40px;
-    font-family: 'Public Sans', sans-serif;
-    font-weight: 300;
-    color: #2d314d;
   }
   .easybankHero .container .heroContent p {
     font-size: 15px;
-    margin: 2rem 0;
-    color: #9698a6;
   }
   .easybankHero .container .heroMockups {
     width: 100%;
@@ -443,7 +436,7 @@ nav .hamburgerMenu {
     display: flex;
     justify-self: center;
     height: auto;
-    margin-top: -34.5rem;
+    margin-top: -4rem;
     -webkit-transform: none;
             transform: none;
   }
@@ -454,10 +447,6 @@ nav .hamburgerMenu {
     padding: 4rem 0;
   }
   .whyEasyBank .container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     text-align: center;
   }
   .whyEasyBank .container h2 {
@@ -474,46 +463,23 @@ nav .hamburgerMenu {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .whyEasyBank .container .features .feature img {
-    margin-top: 2rem;
-  }
   .whyEasyBank .container .features .feature h4 {
     font-size: 18px;
-    font-family: 'Public Sans', sans-serif;
-    font-weight: 300;
-    color: #2d314d;
     margin: 1.2rem 0;
   }
   .whyEasyBank .container .features .feature p {
-    color: #9698a6;
     width: 100%;
     font-size: 15px;
     line-height: 2;
   }
   .latestArticles {
-    background-color: #fafafa;
     padding: 6rem 0;
-  }
-  .latestArticles .container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
   }
   .latestArticles .container h2 {
     font-size: 32px;
-    font-family: 'Public Sans', sans-serif;
-    font-weight: 300;
-    color: #2d314d;
     text-align: center;
   }
   .latestArticles .container .articles {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     margin-top: 1.5rem;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -521,57 +487,18 @@ nav .hamburgerMenu {
             flex-direction: column;
   }
   .latestArticles .container .articles .article {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    background-color: white;
-    border-radius: 7px;
     width: 100%;
     margin-top: 1.5rem;
   }
-  .latestArticles .container .articles .article img {
-    width: 100%;
-    border-radius: 7px 7px 0 0;
-    height: 50%;
-  }
-  .latestArticles .container .articles .article .articleContent {
-    padding: 1.7rem;
-  }
-  .latestArticles .container .articles .article .articleContent h6,
-  .latestArticles .container .articles .article .articleContent p {
-    color: #9698a6;
-  }
-  .latestArticles .container .articles .article .articleContent h6 {
-    margin-bottom: 0.5rem;
-  }
   .latestArticles .container .articles .article .articleContent h4 {
-    color: #2d314d;
-    font-weight: 400;
-    margin-bottom: 0.5rem;
     font-size: 17px;
-  }
-  .latestArticles .container .articles .article .articleContent h4:hover {
-    cursor: pointer;
-    color: #31d35c;
   }
   .latestArticles .container .articles .article .articleContent p {
     font-size: 15px;
   }
 }
 
-.footer {
-  background-color: #2d314d;
-  padding: 4rem 0;
-}
-
 .footer .container {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -591,38 +518,8 @@ nav .hamburgerMenu {
   margin-left: 1rem;
 }
 
-.footer .container .logoSocials .socials svg:hover path {
-  fill: #31d35c;
-}
-
-.footer .container .footerNavbar .list li,
-.footer .container .privacyPolicy .list li {
-  padding: 0.5rem 0;
-}
-
-.footer .container .footerNavbar .list li a,
-.footer .container .privacyPolicy .list li a {
-  color: #f3f4f6;
-}
-
-.footer .container .footerNavbar .list li a:hover,
-.footer .container .privacyPolicy .list li a:hover {
-  color: #31d35c;
-}
-
 .footer .container .ctaButton {
   text-align: center;
   margin-top: 2rem;
-}
-
-.footer .container .ctaButton .requestInviteButton {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 2rem;
-}
-
-.footer .container .ctaButton p {
-  color: #9698a6;
 }
 /*# sourceMappingURL=style.css.map */

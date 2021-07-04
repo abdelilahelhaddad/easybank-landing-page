@@ -64,7 +64,6 @@
   }
 
   .easybankHero {
-    background-color: $Very-Light-Gray;
 
     .container {
       height: auto;
@@ -73,21 +72,15 @@
       .heroContent {
         order: 2;
         width: 100%;
-        align-self: center;
         text-align: center;
         margin-bottom: 5rem;
 
         h1 {
           font-size: 40px;
-          font-family: 'Public Sans', sans-serif;
-          font-weight: $font-weight-300;
-          color: $Dark-Blue;
         }
 
         p {
           font-size: 15px;
-          margin: 2rem 0;
-          color: $Grayish-Blue;
         }
       }
 
@@ -110,7 +103,7 @@
           display: flex;
           justify-self: center;
           height: auto;
-          margin-top: -34.5rem;
+          margin-top: -4rem;
           transform: none;
 
           img {
@@ -125,7 +118,6 @@
     padding: 4rem 0;
 
     .container {
-      flex-direction: column;
       text-align: center;
 
       h2 {
@@ -142,20 +134,13 @@
         flex-direction: column;
 
         .feature {
-          img {
-            margin-top: 2rem;
-          }
 
           h4 {
             font-size: 18px;
-            font-family: 'Public Sans', sans-serif;
-            font-weight: $font-weight-300;
-            color: $Dark-Blue;
             margin: 1.2rem 0;
           }
 
           p {
-            color: $Grayish-Blue;
             width: 100%;
             font-size: 15px;
             line-height: 2;
@@ -166,62 +151,27 @@
   }
 
   .latestArticles {
-    background-color: $Very-Light-Gray;
     padding: 6rem 0;
 
     .container {
-      flex-direction: column;
 
       h2 {
         font-size: 32px;
-        font-family: 'Public Sans', sans-serif;
-        font-weight: $font-weight-300;
-        color: $Dark-Blue;
         text-align: center;
       }
 
       .articles {
-        display: flex;
-        justify-content: space-between;
         margin-top: 1.5rem;
         flex-direction: column;
 
         .article {
-          display: flex;
-          flex-direction: column;
-          background-color: $White;
-          border-radius: 7px;
           width: 100%;
           margin-top: 1.5rem;
 
-          img {
-            width: 100%;
-            border-radius: 7px 7px 0 0;
-            height: 50%;
-          }
-
           .articleContent {
-            padding: 1.7rem;
-
-            h6,
-            p {
-              color: $Grayish-Blue;
-            }
-
-            h6 {
-              margin-bottom: 0.5rem;
-            }
 
             h4 {
-              color: $Dark-Blue;
-              font-weight: $font-weight-400;
-              margin-bottom: 0.5rem;
               font-size: 17px;
-
-              &:hover {
-                cursor: pointer;
-                color: $Lime-Green;
-              }
             }
 
             p {
@@ -235,11 +185,8 @@
 }
 
 .footer {
-  background-color: $Dark-Blue;
-  padding: 4rem 0;
 
   .container {
-    justify-content: space-between;
     flex-direction: column;
     text-align: center;
 
@@ -253,31 +200,6 @@
 
         svg {
           margin-left: 1rem;
-
-          &:hover {
-            path {
-              fill: $Lime-Green;
-            }
-          }
-        }
-      }
-    }
-
-    .footerNavbar,
-    .privacyPolicy {
-
-      .list {
-
-        li {
-          padding: 0.5rem 0;
-
-          a {
-            color: $Light-Grayish-Blue;
-
-            &:hover {
-              color: $Lime-Green;
-            }
-          }
         }
       }
     }
@@ -285,15 +207,6 @@
     .ctaButton {
       text-align: center;
       margin-top: 2rem;
-
-      .requestInviteButton {
-        justify-content: center;
-        margin-bottom: 2rem;
-      }
-
-      p {
-        color: $Grayish-Blue;
-      }
     }
   }
 }
