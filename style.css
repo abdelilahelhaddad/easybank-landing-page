@@ -562,4 +562,67 @@ nav .hamburgerMenu {
     font-size: 15px;
   }
 }
+
+.footer {
+  background-color: #2d314d;
+  padding: 4rem 0;
+}
+
+.footer .container {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.footer .container .logoSocials .logo {
+  margin-bottom: 2rem;
+}
+
+.footer .container .logoSocials .socials {
+  margin-bottom: 2rem;
+}
+
+.footer .container .logoSocials .socials svg {
+  margin-left: 1rem;
+}
+
+.footer .container .logoSocials .socials svg:hover path {
+  fill: #31d35c;
+}
+
+.footer .container .footerNavbar .list li,
+.footer .container .privacyPolicy .list li {
+  padding: 0.5rem 0;
+}
+
+.footer .container .footerNavbar .list li a,
+.footer .container .privacyPolicy .list li a {
+  color: #f3f4f6;
+}
+
+.footer .container .footerNavbar .list li a:hover,
+.footer .container .privacyPolicy .list li a:hover {
+  color: #31d35c;
+}
+
+.footer .container .ctaButton {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.footer .container .ctaButton .requestInviteButton {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.footer .container .ctaButton p {
+  color: #9698a6;
+}
 /*# sourceMappingURL=style.css.map */

@@ -233,3 +233,67 @@
     }
   }
 }
+
+.footer {
+  background-color: $Dark-Blue;
+  padding: 4rem 0;
+
+  .container {
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+
+    .logoSocials {
+      .logo {
+        margin-bottom: 2rem;
+      }
+
+      .socials {
+        margin-bottom: 2rem;
+
+        svg {
+          margin-left: 1rem;
+
+          &:hover {
+            path {
+              fill: $Lime-Green;
+            }
+          }
+        }
+      }
+    }
+
+    .footerNavbar,
+    .privacyPolicy {
+
+      .list {
+
+        li {
+          padding: 0.5rem 0;
+
+          a {
+            color: $Light-Grayish-Blue;
+
+            &:hover {
+              color: $Lime-Green;
+            }
+          }
+        }
+      }
+    }
+
+    .ctaButton {
+      text-align: center;
+      margin-top: 2rem;
+
+      .requestInviteButton {
+        justify-content: center;
+        margin-bottom: 2rem;
+      }
+
+      p {
+        color: $Grayish-Blue;
+      }
+    }
+  }
+}
