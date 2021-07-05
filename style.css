@@ -341,56 +341,49 @@ nav .hamburgerMenu {
   .my-2 {
     margin: 1rem 0;
   }
-  nav .container {
-    background-color: white;
-    position: relative;
-    z-index: 99;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  nav .logo,
-  nav .navbar {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
   nav .navbar {
     display: none;
   }
-  nav .navbar .navbarList {
+  nav .navbar.active {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    width: 80%;
+    position: fixed;
+    background-color: white;
+    border-radius: 7px;
+    top: 10.5%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    -webkit-box-shadow: 50px 10px 230px black;
+            box-shadow: 50px 10px 230px black;
   }
-  nav .navbar .navbarList li {
-    padding: 0 1rem;
+  nav .navbar.active .navbarList {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-  nav .navbar .navbarList li a {
-    color: #9698a6;
+  nav .navbar.active .navbarList li {
+    margin-bottom: 1.5rem;
   }
-  nav .navbar .navbarList li:hover a::after {
-    content: "";
-    display: block;
-    position: relative;
-    bottom: -35px;
-    width: 100%;
-    height: 4px;
-    background: #31d35c;
+  nav .navbar.active .navbarList li:first-child {
+    margin-top: 1.5rem;
+  }
+  nav .navbar.active .navbarList li a {
+    color: #2d314d;
   }
   nav .hamburgerMenu {
     display: block;
     background: url("./images/icon-hamburger.svg") no-repeat;
     width: 24px;
+  }
+  nav .hamburgerMenu.active {
+    background: url("./images/icon-close.svg") no-repeat;
   }
   nav .ctaButton {
     display: none;
@@ -496,30 +489,25 @@ nav .hamburgerMenu {
   .latestArticles .container .articles .article .articleContent p {
     font-size: 15px;
   }
-}
-
-.footer .container {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  text-align: center;
-}
-
-.footer .container .logoSocials .logo {
-  margin-bottom: 2rem;
-}
-
-.footer .container .logoSocials .socials {
-  margin-bottom: 2rem;
-}
-
-.footer .container .logoSocials .socials svg {
-  margin-left: 1rem;
-}
-
-.footer .container .ctaButton {
-  text-align: center;
-  margin-top: 2rem;
+  .footer .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .footer .container .logoSocials .logo {
+    margin-bottom: 2rem;
+  }
+  .footer .container .logoSocials .socials {
+    margin-bottom: 2rem;
+  }
+  .footer .container .logoSocials .socials svg {
+    margin-left: 1rem;
+  }
+  .footer .container .ctaButton {
+    text-align: center;
+    margin-top: 2rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */

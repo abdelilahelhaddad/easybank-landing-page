@@ -9,44 +9,35 @@
 
   //?Navbar Section
   nav {
-    .container {
-      background-color: $White;
-      position: relative;
-      z-index: 99;
-      justify-content: space-between;
-    }
-
-    .logo,
-    .navbar {
-      display: flex;
-      align-items: center;
-    }
 
     .navbar {
       display: none;
+    }
+
+    .navbar.active {
+      display: flex;
+      justify-content: center;
+      width: 80%;
+      position: fixed;
+      background-color: $White;
+      border-radius: 7px;
+      top: 10.5%;
+      left: 50%;
+      transform: translateX(-50%);
+      box-shadow: 50px 10px 230px rgba($color: #000000, $alpha: 1);
 
       .navbarList {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        flex-direction: column;
 
         li {
-          padding: 0 1rem;
+          margin-bottom: 1.5rem;
 
-          a {
-            color: $Grayish-Blue;
+          &:first-child {
+            margin-top: 1.5rem;
           }
 
-          &:hover {
-            a::after {
-              content: "";
-              display: block;
-              position: relative;
-              bottom: -35px;
-              width: 100%;
-              height: 4px;
-              background: $Lime-Green;
-            }
+          a {
+            color: $Dark-Blue;
           }
         }
       }
@@ -56,6 +47,10 @@
       display: block;
       background: url("./images/icon-hamburger.svg") no-repeat;
       width: 24px;
+    }
+
+    .hamburgerMenu.active {
+      background: url("./images/icon-close.svg") no-repeat;
     }
 
     .ctaButton {
@@ -182,31 +177,31 @@
       }
     }
   }
-}
 
-.footer {
+  .footer {
 
-  .container {
-    flex-direction: column;
-    text-align: center;
+    .container {
+      flex-direction: column;
+      text-align: center;
 
-    .logoSocials {
-      .logo {
-        margin-bottom: 2rem;
-      }
+      .logoSocials {
+        .logo {
+          margin-bottom: 2rem;
+        }
 
-      .socials {
-        margin-bottom: 2rem;
+        .socials {
+          margin-bottom: 2rem;
 
-        svg {
-          margin-left: 1rem;
+          svg {
+            margin-left: 1rem;
+          }
         }
       }
-    }
 
-    .ctaButton {
-      text-align: center;
-      margin-top: 2rem;
+      .ctaButton {
+        text-align: center;
+        margin-top: 2rem;
+      }
     }
   }
 }
